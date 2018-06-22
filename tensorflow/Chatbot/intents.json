@@ -1,0 +1,64 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting. What can I do for you?", "Hi there, how can I help?"]
+        },
+        {"tag": "itchy",
+         "patterns": ["I would like to diagnose my skin rash","i have a rash"],
+         "responses": ["Is it itchy?","is the rash itching?"],
+         "context_set": "itchy_filter"
+        },
+        {"tag": "itchy_resp",
+         "patterns":["yes it is itching","yeah itches sometimes rarely", "yes its itchy"],
+          "responses": ["Were you exposed to sun?"],
+          "context_filter":"itchy_filter"
+        },
+        {"tag": "itchy_resp1",
+         "patterns":["not itchy","no it is not itching","it does not itch"],
+          "responses": ["result:notrash"],
+          "context_filter":"itchy_filter"
+        },
+        {"tag": "exposed_1",
+         "patterns":["yes I was exposed to sun", "yeah I was exposed"],
+          "responses": ["Which part of the body is the rash?\nChoose an option\n(1).Head&Neck\n(2).Legs\n(3).Back\n(4).Others"],
+          "context_set":"spread_filter"
+        },
+        {"tag": "exposed_2",
+         "patterns":["nah I was not exposed", "no i was not exposed to sun"],
+          "responses": ["is it spreading?","does the rash spread?"],
+          "context_set":"spread_filter"
+        },
+        {"tag": "exposed_resp_1",
+         "patterns":["1", "head", "neck"],
+          "responses": ["result:Carcinoma"],
+          "context_filter":"spread_filter"
+        },
+        {"tag": "exposed_resp_2",
+         "patterns":["2","3","4", "leg", "back"],
+          "responses": ["result:Melonama,Carcinoma"],
+          "context_filter":"spread_filter"
+        },
+        {"tag": "spread_resp",
+         "patterns":["no it is not spreading", "no it does not spread"],
+          "responses": ["result:Melonama,Carcinoma"],
+          "context_filter":"spread_filter"
+        },
+        {"tag": "spread_resp",
+         "patterns":["yes it is spreading","yes it spreads"],
+          "responses": ["result:Melonama"],
+          "context_filter":"spread_filter"
+        },
+        {"tag": "empty",
+         "patterns":[],
+         "responses":["Sorry cant understand", "Can you provide more info?"]
+        },
+        {"tag": "bye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thank_you",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        }
+   ]
+}

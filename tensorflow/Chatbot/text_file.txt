@@ -1,0 +1,127 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+0: op name = import/InputData/X, op type = ( Placeholder ), inputs = , outputs = import/InputData/X:0
+@input shapes:
+@output shapes:
+name = import/InputData/X:0 : (?, 57)
+---------------------------------------------------------------------------------------------------------------------------------------------
+1: op name = import/FullyConnected/W, op type = ( Const ), inputs = , outputs = import/FullyConnected/W:0
+@input shapes:
+@output shapes:
+name = import/FullyConnected/W:0 : (57, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+2: op name = import/FullyConnected/W/read, op type = ( Identity ), inputs = import/FullyConnected/W:0, outputs = import/FullyConnected/W/read:0
+@input shapes:
+name = import/FullyConnected/W:0 : (57, 8)
+@output shapes:
+name = import/FullyConnected/W/read:0 : (57, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+3: op name = import/FullyConnected/b, op type = ( Const ), inputs = , outputs = import/FullyConnected/b:0
+@input shapes:
+@output shapes:
+name = import/FullyConnected/b:0 : (8,)
+---------------------------------------------------------------------------------------------------------------------------------------------
+4: op name = import/FullyConnected/b/read, op type = ( Identity ), inputs = import/FullyConnected/b:0, outputs = import/FullyConnected/b/read:0
+@input shapes:
+name = import/FullyConnected/b:0 : (8,)
+@output shapes:
+name = import/FullyConnected/b/read:0 : (8,)
+---------------------------------------------------------------------------------------------------------------------------------------------
+5: op name = import/FullyConnected/MatMul, op type = ( MatMul ), inputs = import/InputData/X:0, import/FullyConnected/W/read:0, outputs = import/FullyConnected/MatMul:0
+@input shapes:
+name = import/InputData/X:0 : (?, 57)
+name = import/FullyConnected/W/read:0 : (57, 8)
+@output shapes:
+name = import/FullyConnected/MatMul:0 : (?, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+6: op name = import/FullyConnected/BiasAdd, op type = ( BiasAdd ), inputs = import/FullyConnected/MatMul:0, import/FullyConnected/b/read:0, outputs = import/FullyConnected/BiasAdd:0
+@input shapes:
+name = import/FullyConnected/MatMul:0 : (?, 8)
+name = import/FullyConnected/b/read:0 : (8,)
+@output shapes:
+name = import/FullyConnected/BiasAdd:0 : (?, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+7: op name = import/FullyConnected_1/W, op type = ( Const ), inputs = , outputs = import/FullyConnected_1/W:0
+@input shapes:
+@output shapes:
+name = import/FullyConnected_1/W:0 : (8, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+8: op name = import/FullyConnected_1/W/read, op type = ( Identity ), inputs = import/FullyConnected_1/W:0, outputs = import/FullyConnected_1/W/read:0
+@input shapes:
+name = import/FullyConnected_1/W:0 : (8, 8)
+@output shapes:
+name = import/FullyConnected_1/W/read:0 : (8, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+9: op name = import/FullyConnected_1/b, op type = ( Const ), inputs = , outputs = import/FullyConnected_1/b:0
+@input shapes:
+@output shapes:
+name = import/FullyConnected_1/b:0 : (8,)
+---------------------------------------------------------------------------------------------------------------------------------------------
+10: op name = import/FullyConnected_1/b/read, op type = ( Identity ), inputs = import/FullyConnected_1/b:0, outputs = import/FullyConnected_1/b/read:0
+@input shapes:
+name = import/FullyConnected_1/b:0 : (8,)
+@output shapes:
+name = import/FullyConnected_1/b/read:0 : (8,)
+---------------------------------------------------------------------------------------------------------------------------------------------
+11: op name = import/FullyConnected_1/MatMul, op type = ( MatMul ), inputs = import/FullyConnected/BiasAdd:0, import/FullyConnected_1/W/read:0, outputs = import/FullyConnected_1/MatMul:0
+@input shapes:
+name = import/FullyConnected/BiasAdd:0 : (?, 8)
+name = import/FullyConnected_1/W/read:0 : (8, 8)
+@output shapes:
+name = import/FullyConnected_1/MatMul:0 : (?, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+12: op name = import/FullyConnected_1/BiasAdd, op type = ( BiasAdd ), inputs = import/FullyConnected_1/MatMul:0, import/FullyConnected_1/b/read:0, outputs = import/FullyConnected_1/BiasAdd:0
+@input shapes:
+name = import/FullyConnected_1/MatMul:0 : (?, 8)
+name = import/FullyConnected_1/b/read:0 : (8,)
+@output shapes:
+name = import/FullyConnected_1/BiasAdd:0 : (?, 8)
+---------------------------------------------------------------------------------------------------------------------------------------------
+13: op name = import/FullyConnected_2/W, op type = ( Const ), inputs = , outputs = import/FullyConnected_2/W:0
+@input shapes:
+@output shapes:
+name = import/FullyConnected_2/W:0 : (8, 10)
+---------------------------------------------------------------------------------------------------------------------------------------------
+14: op name = import/FullyConnected_2/W/read, op type = ( Identity ), inputs = import/FullyConnected_2/W:0, outputs = import/FullyConnected_2/W/read:0
+@input shapes:
+name = import/FullyConnected_2/W:0 : (8, 10)
+@output shapes:
+name = import/FullyConnected_2/W/read:0 : (8, 10)
+---------------------------------------------------------------------------------------------------------------------------------------------
+15: op name = import/FullyConnected_2/b, op type = ( Const ), inputs = , outputs = import/FullyConnected_2/b:0
+@input shapes:
+@output shapes:
+name = import/FullyConnected_2/b:0 : (10,)
+---------------------------------------------------------------------------------------------------------------------------------------------
+16: op name = import/FullyConnected_2/b/read, op type = ( Identity ), inputs = import/FullyConnected_2/b:0, outputs = import/FullyConnected_2/b/read:0
+@input shapes:
+name = import/FullyConnected_2/b:0 : (10,)
+@output shapes:
+name = import/FullyConnected_2/b/read:0 : (10,)
+---------------------------------------------------------------------------------------------------------------------------------------------
+17: op name = import/FullyConnected_2/MatMul, op type = ( MatMul ), inputs = import/FullyConnected_1/BiasAdd:0, import/FullyConnected_2/W/read:0, outputs = import/FullyConnected_2/MatMul:0
+@input shapes:
+name = import/FullyConnected_1/BiasAdd:0 : (?, 8)
+name = import/FullyConnected_2/W/read:0 : (8, 10)
+@output shapes:
+name = import/FullyConnected_2/MatMul:0 : (?, 10)
+---------------------------------------------------------------------------------------------------------------------------------------------
+18: op name = import/FullyConnected_2/BiasAdd, op type = ( BiasAdd ), inputs = import/FullyConnected_2/MatMul:0, import/FullyConnected_2/b/read:0, outputs = import/FullyConnected_2/BiasAdd:0
+@input shapes:
+name = import/FullyConnected_2/MatMul:0 : (?, 10)
+name = import/FullyConnected_2/b/read:0 : (10,)
+@output shapes:
+name = import/FullyConnected_2/BiasAdd:0 : (?, 10)
+---------------------------------------------------------------------------------------------------------------------------------------------
+19: op name = import/FullyConnected_2/Softmax, op type = ( Softmax ), inputs = import/FullyConnected_2/BiasAdd:0, outputs = import/FullyConnected_2/Softmax:0
+@input shapes:
+name = import/FullyConnected_2/BiasAdd:0 : (?, 10)
+@output shapes:
+name = import/FullyConnected_2/Softmax:0 : (?, 10)
+---------------------------------------------------------------------------------------------------------------------------------------------
+OPS counts:
+Softmax : 1
+Placeholder : 1
+MatMul : 3
+BiasAdd : 3
+Const : 6
+Identity : 6

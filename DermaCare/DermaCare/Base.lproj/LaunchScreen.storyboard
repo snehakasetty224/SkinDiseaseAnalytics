@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="w36-5i-MNd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALK TO YOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA3-sE-LAu">
+                                <rect key="frame" x="128" y="323" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POCKET DERMATOLOGIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNg-xl-qsx">
+                                <rect key="frame" x="83" y="352" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DERMACARE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gE-8f-SZy">
+                                <rect key="frame" x="0.0" y="217" width="375" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="08a-Yw-C9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.30980392159999998" green="0.76470588240000004" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1gE-8f-SZy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HiZ-E7-OS9"/>
+                            <constraint firstItem="w36-5i-MNd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KeH-wL-RyX"/>
+                            <constraint firstItem="w36-5i-MNd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LJo-WB-6QG"/>
+                            <constraint firstItem="SNg-xl-qsx" firstAttribute="top" secondItem="BA3-sE-LAu" secondAttribute="bottom" constant="8" symbolic="YES" id="Ndi-FG-HYi"/>
+                            <constraint firstItem="1gE-8f-SZy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="Tpw-pr-dQQ"/>
+                            <constraint firstItem="w36-5i-MNd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UEd-kM-e4h"/>
+                            <constraint firstItem="1gE-8f-SZy" firstAttribute="centerX" secondItem="BA3-sE-LAu" secondAttribute="centerX" id="dic-Jr-4rU"/>
+                            <constraint firstItem="1gE-8f-SZy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ehK-wp-v0T"/>
+                            <constraint firstItem="w36-5i-MNd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gQY-Mf-cfq"/>
+                            <constraint firstItem="1gE-8f-SZy" firstAttribute="centerX" secondItem="SNg-xl-qsx" secondAttribute="centerX" id="k4m-yR-o8d"/>
+                            <constraint firstItem="BA3-sE-LAu" firstAttribute="top" secondItem="1gE-8f-SZy" secondAttribute="bottom" constant="8" symbolic="YES" id="mXi-LY-riF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in ListDoctorController.fetchDoctorListData():ListDoctorController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ListDoctorController.fetchDoctorListData():ListDoctorController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

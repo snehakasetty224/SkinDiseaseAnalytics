@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		201FD235207174D200B2B1BE /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201FD234207174D200B2B1BE /* ScanViewController.swift */; };
+		204C1B1C209C4AF2009B52F5 /* PillReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C1B1B209C4AF2009B52F5 /* PillReminderTableViewController.swift */; };
+		204C1B20209C4BBB009B52F5 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 204C1B1F209C4BBB009B52F5 /* bell.mp3 */; };
+		204C1B28209C4C83009B52F5 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C1B27209C4C83009B52F5 /* AddAlarmViewController.swift */; };
+		204C1B2A209C4CDF009B52F5 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C1B29209C4CDF009B52F5 /* Alarm.swift */; };
+		204C1B2C209E74E7009B52F5 /* inception_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 204C1B2B209E74E7009B52F5 /* inception_coreml.mlmodel */; };
+		204C1B2E209E812F009B52F5 /* CoreMlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C1B2D209E812F009B52F5 /* CoreMlViewController.swift */; };
+		20AAB1D320874575008FD056 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AAB1D220874575008FD056 /* HistoryTableViewCell.swift */; };
+		722FB3B4208D18CC0088A7EE /* RootTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FB3B3208D18CC0088A7EE /* RootTabController.swift */; };
+		722FB3B6208E9A2E0088A7EE /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FB3B5208E9A2E0088A7EE /* ChatModel.swift */; };
+		722FB3B8208EB4630088A7EE /* ChatMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FB3B7208EB4630088A7EE /* ChatMessageViewCell.swift */; };
+		7239C9A020350FB900A3C545 /* HKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239C99F20350FB900A3C545 /* HKManager.swift */; };
+		7239C9A22037A29F00A3C545 /* HKManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239C9A12037A29F00A3C545 /* HKManagerDelegate.swift */; };
+		724A6F042086B58100DF3DAC /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724A6F032086B58100DF3DAC /* ResultController.swift */; };
+		724A6F062086CC8400DF3DAC /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724A6F052086CC8400DF3DAC /* HistoryController.swift */; };
+		724A6F08208C4FAD00DF3DAC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724A6F07208C4FAD00DF3DAC /* HealthKit.framework */; };
+		726DB46D2093A0DF0033B6B8 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB46C2093A0DF0033B6B8 /* YelpClient.swift */; };
+		726DB4712093A1280033B6B8 /* PharmacyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB4702093A1280033B6B8 /* PharmacyViewCell.swift */; };
+		726DB4732093A15F0033B6B8 /* PharmacyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB4722093A15F0033B6B8 /* PharmacyModel.swift */; };
+		726DB4792093D4970033B6B8 /* AppointmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB4782093D4970033B6B8 /* AppointmentViewCell.swift */; };
+		726DB47D2098EAEE0033B6B8 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB47C2098EAEE0033B6B8 /* HistoryModel.swift */; };
+		726DB47F209982990033B6B8 /* ViewAppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB47E209982990033B6B8 /* ViewAppointmentCell.swift */; };
+		726DB4812099851B0033B6B8 /* PatientAppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DB4802099851B0033B6B8 /* PatientAppointmentModel.swift */; };
+		727EC1402092E308005008CE /* PharmacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727EC13F2092E308005008CE /* PharmacyController.swift */; };
+		72C4D88B203B92C0004FEA2E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4D88A203B92C0004FEA2E /* UserModel.swift */; };
+		72C4D88D203BACE1004FEA2E /* HealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4D88C203BACE1004FEA2E /* HealthModel.swift */; };
+		72D6C64C20ACF5CA00FEF96B /* DetailResultAnalysisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D6C64B20ACF5CA00FEF96B /* DetailResultAnalysisController.swift */; };
+		72DC3BE720A274D600836E8D /* FinalResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC3BE620A274D600836E8D /* FinalResultController.swift */; };
+		72EBDBE4204FC8EF004ABAA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72EBDBE3204FC8EF004ABAA4 /* GoogleService-Info.plist */; };
+		72FB9A432023D752009E4373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A422023D752009E4373 /* AppDelegate.swift */; };
+		72FB9A452023D752009E4373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A442023D752009E4373 /* ViewController.swift */; };
+		72FB9A482023D752009E4373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FB9A462023D752009E4373 /* Main.storyboard */; };
+		72FB9A4B2023D752009E4373 /* DermaCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A492023D752009E4373 /* DermaCare.xcdatamodeld */; };
+		72FB9A4D2023D752009E4373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FB9A4C2023D752009E4373 /* Assets.xcassets */; };
+		72FB9A502023D752009E4373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FB9A4E2023D752009E4373 /* LaunchScreen.storyboard */; };
+		72FB9A5B2023D752009E4373 /* DermaCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A5A2023D752009E4373 /* DermaCareTests.swift */; };
+		72FB9A662023D752009E4373 /* DermaCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A652023D752009E4373 /* DermaCareUITests.swift */; };
+		72FB9A772024389E009E4373 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A762024389E009E4373 /* RegisterController.swift */; };
+		72FB9A79202438FE009E4373 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A78202438FE009E4373 /* LoginController.swift */; };
+		72FB9A7B202439D9009E4373 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A7A202439D9009E4373 /* HomeController.swift */; };
+		72FB9A7D20243A54009E4373 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A7C20243A54009E4373 /* AccountController.swift */; };
+		72FB9A7F20243A93009E4373 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A7E20243A93009E4373 /* ProfileController.swift */; };
+		72FB9A8120243ABC009E4373 /* DoctorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A8020243ABC009E4373 /* DoctorController.swift */; };
+		72FB9A8320243B59009E4373 /* ListDoctorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A8220243B59009E4373 /* ListDoctorController.swift */; };
+		72FB9A8720243BF1009E4373 /* PatientViewAppointmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A8620243BF1009E4373 /* PatientViewAppointmentController.swift */; };
+		72FB9A8920243C4E009E4373 /* BookAppointmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A8820243C4E009E4373 /* BookAppointmentController.swift */; };
+		72FB9A8B202444FC009E4373 /* DiagnoseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB9A8A202444FC009E4373 /* DiagnoseController.swift */; };
+		79678F2CE2B8CC951340B6ED /* Pods_DermaCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0D81ADEB691E829B5BC454 /* Pods_DermaCareTests.framework */; };
+		85201F96371C499FBCCAFC2A /* Pods_DermaCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB1F4D3893F2E75A8BD3E85 /* Pods_DermaCareUITests.framework */; };
+		FD6F7C3EAB3A944417688113 /* Pods_DermaCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1CCD7EB78F4977D9577BA1 /* Pods_DermaCare.framework */; };
+		FE02632020969E5A00758CF9 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02631F20969E5A00758CF9 /* DoctorTableViewCell.swift */; };
+		FE0263222096FAE500758CF9 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0263212096FAE500758CF9 /* DoctorModel.swift */; };
+		FE026324209A84C100758CF9 /* DoctorRegisterDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE026323209A84C100758CF9 /* DoctorRegisterDetailsController.swift */; };
+		FE026326209BE02F00758CF9 /* DoctorViewAppointmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE026325209BE02F00758CF9 /* DoctorViewAppointmentController.swift */; };
+		FE02632A209C11FD00758CF9 /* DoctorAppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE026329209C11FD00758CF9 /* DoctorAppointmentModel.swift */; };
+		FE02632C209C152F00758CF9 /* DocAppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02632B209C152F00758CF9 /* DocAppointmentTableViewCell.swift */; };
+		FEEBE16F209EBB3500BC3CFB /* DoctorAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBE16E209EBB3500BC3CFB /* DoctorAccountController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72FB9A572023D752009E4373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72FB9A372023D752009E4373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FB9A3E2023D752009E4373;
+			remoteInfo = DermaCare;
+		};
+		72FB9A622023D752009E4373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72FB9A372023D752009E4373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FB9A3E2023D752009E4373;
+			remoteInfo = DermaCare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201FD234207174D200B2B1BE /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		204C1B1B209C4AF2009B52F5 /* PillReminderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillReminderTableViewController.swift; sourceTree = "<group>"; };
+		204C1B1F209C4BBB009B52F5 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		204C1B27209C4C83009B52F5 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		204C1B29209C4CDF009B52F5 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		204C1B2B209E74E7009B52F5 /* inception_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = inception_coreml.mlmodel; sourceTree = "<group>"; };
+		204C1B2D209E812F009B52F5 /* CoreMlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMlViewController.swift; sourceTree = "<group>"; };
+		20AAB1D220874575008FD056 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		40545FFFE0FA422624E9C320 /* Pods-DermaCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DermaCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DermaCare/Pods-DermaCare.debug.xcconfig"; sourceTree = "<group>"; };
+		722FB3B3208D18CC0088A7EE /* RootTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabController.swift; sourceTree = "<group>"; };
+		722FB3B5208E9A2E0088A7EE /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		722FB3B7208EB4630088A7EE /* ChatMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageViewCell.swift; sourceTree = "<group>"; };
+		7239C99920350E5E00A3C545 /* DermaCare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DermaCare.entitlements; sourceTree = "<group>"; };
+		7239C99F20350FB900A3C545 /* HKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKManager.swift; sourceTree = "<group>"; };
+		7239C9A12037A29F00A3C545 /* HKManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKManagerDelegate.swift; sourceTree = "<group>"; };
+		724A6F032086B58100DF3DAC /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		724A6F052086CC8400DF3DAC /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		724A6F07208C4FAD00DF3DAC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		726DB46C2093A0DF0033B6B8 /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
+		726DB4702093A1280033B6B8 /* PharmacyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyViewCell.swift; sourceTree = "<group>"; };
+		726DB4722093A15F0033B6B8 /* PharmacyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyModel.swift; sourceTree = "<group>"; };
+		726DB4782093D4970033B6B8 /* AppointmentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewCell.swift; sourceTree = "<group>"; };
+		726DB47C2098EAEE0033B6B8 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		726DB47E209982990033B6B8 /* ViewAppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAppointmentCell.swift; sourceTree = "<group>"; };
+		726DB4802099851B0033B6B8 /* PatientAppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAppointmentModel.swift; sourceTree = "<group>"; };
+		727EC13F2092E308005008CE /* PharmacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyController.swift; sourceTree = "<group>"; };
+		72C4D88A203B92C0004FEA2E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		72C4D88C203BACE1004FEA2E /* HealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModel.swift; sourceTree = "<group>"; };
+		72D6C64B20ACF5CA00FEF96B /* DetailResultAnalysisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResultAnalysisController.swift; sourceTree = "<group>"; };
+		72DC3BE620A274D600836E8D /* FinalResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalResultController.swift; sourceTree = "<group>"; };
+		72EBDBE3204FC8EF004ABAA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		72FB9A3F2023D752009E4373 /* DermaCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DermaCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FB9A422023D752009E4373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72FB9A442023D752009E4373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72FB9A472023D752009E4373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72FB9A4A2023D752009E4373 /* DermaCare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DermaCare.xcdatamodel; sourceTree = "<group>"; };
+		72FB9A4C2023D752009E4373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72FB9A4F2023D752009E4373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72FB9A512023D752009E4373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FB9A562023D752009E4373 /* DermaCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DermaCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FB9A5A2023D752009E4373 /* DermaCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DermaCareTests.swift; sourceTree = "<group>"; };
+		72FB9A5C2023D752009E4373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FB9A612023D752009E4373 /* DermaCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DermaCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FB9A652023D752009E4373 /* DermaCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DermaCareUITests.swift; sourceTree = "<group>"; };
+		72FB9A672023D752009E4373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FB9A762024389E009E4373 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		72FB9A78202438FE009E4373 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		72FB9A7A202439D9009E4373 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		72FB9A7C20243A54009E4373 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		72FB9A7E20243A93009E4373 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		72FB9A8020243ABC009E4373 /* DoctorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorController.swift; sourceTree = "<group>"; };
+		72FB9A8220243B59009E4373 /* ListDoctorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDoctorController.swift; sourceTree = "<group>"; };
+		72FB9A8620243BF1009E4373 /* PatientViewAppointmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewAppointmentController.swift; sourceTree = "<group>"; };
+		72FB9A8820243C4E009E4373 /* BookAppointmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentController.swift; sourceTree = "<group>"; };
+		72FB9A8A202444FC009E4373 /* DiagnoseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnoseController.swift; sourceTree = "<group>"; };
+		7A1CCD7EB78F4977D9577BA1 /* Pods_DermaCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DermaCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0D81ADEB691E829B5BC454 /* Pods_DermaCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DermaCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4219805920FCD7E441C03A /* Pods-DermaCareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DermaCareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DermaCareUITests/Pods-DermaCareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B71EAF79CA1A0F8C7BBADDA /* Pods-DermaCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DermaCareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DermaCareUITests/Pods-DermaCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D839FD3A7F3E20EC46E20DE /* Pods-DermaCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DermaCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DermaCareTests/Pods-DermaCareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C72AFA4F3A92FF985FAC0A98 /* Pods-DermaCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DermaCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-DermaCare/Pods-DermaCare.release.xcconfig"; sourceTree = "<group>"; };
+		D6FE3A8BB13B22E707363895 /* Pods-DermaCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DermaCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DermaCareTests/Pods-DermaCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		DEB1F4D3893F2E75A8BD3E85 /* Pods_DermaCareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DermaCareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE02631F20969E5A00758CF9 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		FE0263212096FAE500758CF9 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
+		FE026323209A84C100758CF9 /* DoctorRegisterDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegisterDetailsController.swift; sourceTree = "<group>"; };
+		FE026325209BE02F00758CF9 /* DoctorViewAppointmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewAppointmentController.swift; sourceTree = "<group>"; };
+		FE026329209C11FD00758CF9 /* DoctorAppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppointmentModel.swift; sourceTree = "<group>"; };
+		FE02632B209C152F00758CF9 /* DocAppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocAppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		FEEBE16E209EBB3500BC3CFB /* DoctorAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAccountController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72FB9A3C2023D752009E4373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6F7C3EAB3A944417688113 /* Pods_DermaCare.framework in Frameworks */,
+				724A6F08208C4FAD00DF3DAC /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FB9A532023D752009E4373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79678F2CE2B8CC951340B6ED /* Pods_DermaCareTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FB9A5E2023D752009E4373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85201F96371C499FBCCAFC2A /* Pods_DermaCareUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E46C121CF7354B47692BA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724A6F07208C4FAD00DF3DAC /* HealthKit.framework */,
+				7A1CCD7EB78F4977D9577BA1 /* Pods_DermaCare.framework */,
+				8A0D81ADEB691E829B5BC454 /* Pods_DermaCareTests.framework */,
+				DEB1F4D3893F2E75A8BD3E85 /* Pods_DermaCareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7239C99E20350F9300A3C545 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				204C1B2B209E74E7009B52F5 /* inception_coreml.mlmodel */,
+				204C1B29209C4CDF009B52F5 /* Alarm.swift */,
+				726DB47C2098EAEE0033B6B8 /* HistoryModel.swift */,
+				7239C99F20350FB900A3C545 /* HKManager.swift */,
+				7239C9A12037A29F00A3C545 /* HKManagerDelegate.swift */,
+				72C4D88A203B92C0004FEA2E /* UserModel.swift */,
+				72C4D88C203BACE1004FEA2E /* HealthModel.swift */,
+				722FB3B5208E9A2E0088A7EE /* ChatModel.swift */,
+				726DB4722093A15F0033B6B8 /* PharmacyModel.swift */,
+				FE0263212096FAE500758CF9 /* DoctorModel.swift */,
+				726DB4802099851B0033B6B8 /* PatientAppointmentModel.swift */,
+				FE026329209C11FD00758CF9 /* DoctorAppointmentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		726DB46B2093A0D40033B6B8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				726DB46C2093A0DF0033B6B8 /* YelpClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		727EC13E2092D9A5005008CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				722FB3B7208EB4630088A7EE /* ChatMessageViewCell.swift */,
+				20AAB1D220874575008FD056 /* HistoryTableViewCell.swift */,
+				726DB4702093A1280033B6B8 /* PharmacyViewCell.swift */,
+				726DB4782093D4970033B6B8 /* AppointmentViewCell.swift */,
+				FE02631F20969E5A00758CF9 /* DoctorTableViewCell.swift */,
+				726DB47E209982990033B6B8 /* ViewAppointmentCell.swift */,
+				FE02632B209C152F00758CF9 /* DocAppointmentTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72FB9A362023D752009E4373 = {
+			isa = PBXGroup;
+			children = (
+				72FB9A412023D752009E4373 /* DermaCare */,
+				72FB9A592023D752009E4373 /* DermaCareTests */,
+				72FB9A642023D752009E4373 /* DermaCareUITests */,
+				72FB9A402023D752009E4373 /* Products */,
+				DD41E7E6FF2238BB7F8D0D9E /* Pods */,
+				3E46C121CF7354B47692BA32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72FB9A402023D752009E4373 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72FB9A3F2023D752009E4373 /* DermaCare.app */,
+				72FB9A562023D752009E4373 /* DermaCareTests.xctest */,
+				72FB9A612023D752009E4373 /* DermaCareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72FB9A412023D752009E4373 /* DermaCare */ = {
+			isa = PBXGroup;
+			children = (
+				726DB46B2093A0D40033B6B8 /* API */,
+				727EC13E2092D9A5005008CE /* View */,
+				7239C99E20350F9300A3C545 /* Model */,
+				7239C99920350E5E00A3C545 /* DermaCare.entitlements */,
+				72EBDBE3204FC8EF004ABAA4 /* GoogleService-Info.plist */,
+				72FB9A752024387B009E4373 /* Controller */,
+				72FB9A422023D752009E4373 /* AppDelegate.swift */,
+				72FB9A462023D752009E4373 /* Main.storyboard */,
+				72FB9A4C2023D752009E4373 /* Assets.xcassets */,
+				72FB9A4E2023D752009E4373 /* LaunchScreen.storyboard */,
+				72FB9A512023D752009E4373 /* Info.plist */,
+				72FB9A492023D752009E4373 /* DermaCare.xcdatamodeld */,
+			);
+			path = DermaCare;
+			sourceTree = "<group>";
+		};
+		72FB9A592023D752009E4373 /* DermaCareTests */ = {
+			isa = PBXGroup;
+			children = (
+				72FB9A5A2023D752009E4373 /* DermaCareTests.swift */,
+				72FB9A5C2023D752009E4373 /* Info.plist */,
+			);
+			path = DermaCareTests;
+			sourceTree = "<group>";
+		};
+		72FB9A642023D752009E4373 /* DermaCareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72FB9A652023D752009E4373 /* DermaCareUITests.swift */,
+				72FB9A672023D752009E4373 /* Info.plist */,
+			);
+			path = DermaCareUITests;
+			sourceTree = "<group>";
+		};
+		72FB9A752024387B009E4373 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				204C1B1F209C4BBB009B52F5 /* bell.mp3 */,
+				72FB9A442023D752009E4373 /* ViewController.swift */,
+				72FB9A762024389E009E4373 /* RegisterController.swift */,
+				72FB9A78202438FE009E4373 /* LoginController.swift */,
+				72FB9A7A202439D9009E4373 /* HomeController.swift */,
+				72FB9A7C20243A54009E4373 /* AccountController.swift */,
+				72FB9A7E20243A93009E4373 /* ProfileController.swift */,
+				72FB9A8020243ABC009E4373 /* DoctorController.swift */,
+				72FB9A8220243B59009E4373 /* ListDoctorController.swift */,
+				72FB9A8620243BF1009E4373 /* PatientViewAppointmentController.swift */,
+				72FB9A8820243C4E009E4373 /* BookAppointmentController.swift */,
+				72FB9A8A202444FC009E4373 /* DiagnoseController.swift */,
+				201FD234207174D200B2B1BE /* ScanViewController.swift */,
+				724A6F032086B58100DF3DAC /* ResultController.swift */,
+				724A6F052086CC8400DF3DAC /* HistoryController.swift */,
+				722FB3B3208D18CC0088A7EE /* RootTabController.swift */,
+				727EC13F2092E308005008CE /* PharmacyController.swift */,
+				FE026323209A84C100758CF9 /* DoctorRegisterDetailsController.swift */,
+				FE026325209BE02F00758CF9 /* DoctorViewAppointmentController.swift */,
+				204C1B1B209C4AF2009B52F5 /* PillReminderTableViewController.swift */,
+				204C1B27209C4C83009B52F5 /* AddAlarmViewController.swift */,
+				204C1B2D209E812F009B52F5 /* CoreMlViewController.swift */,
+				FEEBE16E209EBB3500BC3CFB /* DoctorAccountController.swift */,
+				72DC3BE620A274D600836E8D /* FinalResultController.swift */,
+				72D6C64B20ACF5CA00FEF96B /* DetailResultAnalysisController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD41E7E6FF2238BB7F8D0D9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40545FFFE0FA422624E9C320 /* Pods-DermaCare.debug.xcconfig */,
+				C72AFA4F3A92FF985FAC0A98 /* Pods-DermaCare.release.xcconfig */,
+				9D839FD3A7F3E20EC46E20DE /* Pods-DermaCareTests.debug.xcconfig */,
+				D6FE3A8BB13B22E707363895 /* Pods-DermaCareTests.release.xcconfig */,
+				9B71EAF79CA1A0F8C7BBADDA /* Pods-DermaCareUITests.debug.xcconfig */,
+				8C4219805920FCD7E441C03A /* Pods-DermaCareUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72FB9A3E2023D752009E4373 /* DermaCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FB9A6A2023D753009E4373 /* Build configuration list for PBXNativeTarget "DermaCare" */;
+			buildPhases = (
+				962A28E846E15BBF1DFFD04E /* [CP] Check Pods Manifest.lock */,
+				72FB9A3B2023D752009E4373 /* Sources */,
+				72FB9A3C2023D752009E4373 /* Frameworks */,
+				72FB9A3D2023D752009E4373 /* Resources */,
+				FCC2345E3F91396D01B6391E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DermaCare;
+			productName = DermaCare;
+			productReference = 72FB9A3F2023D752009E4373 /* DermaCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72FB9A552023D752009E4373 /* DermaCareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FB9A6D2023D753009E4373 /* Build configuration list for PBXNativeTarget "DermaCareTests" */;
+			buildPhases = (
+				52D3632B5763C021ACA5CB6D /* [CP] Check Pods Manifest.lock */,
+				72FB9A522023D752009E4373 /* Sources */,
+				72FB9A532023D752009E4373 /* Frameworks */,
+				72FB9A542023D752009E4373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FB9A582023D752009E4373 /* PBXTargetDependency */,
+			);
+			name = DermaCareTests;
+			productName = DermaCareTests;
+			productReference = 72FB9A562023D752009E4373 /* DermaCareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72FB9A602023D752009E4373 /* DermaCareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FB9A702023D753009E4373 /* Build configuration list for PBXNativeTarget "DermaCareUITests" */;
+			buildPhases = (
+				B1CB464BD2EDCDFBAF421A40 /* [CP] Check Pods Manifest.lock */,
+				72FB9A5D2023D752009E4373 /* Sources */,
+				72FB9A5E2023D752009E4373 /* Frameworks */,
+				72FB9A5F2023D752009E4373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FB9A632023D752009E4373 /* PBXTargetDependency */,
+			);
+			name = DermaCareUITests;
+			productName = DermaCareUITests;
+			productReference = 72FB9A612023D752009E4373 /* DermaCareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72FB9A372023D752009E4373 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Pooja;
+				TargetAttributes = {
+					72FB9A3E2023D752009E4373 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
+					};
+					72FB9A552023D752009E4373 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72FB9A3E2023D752009E4373;
+					};
+					72FB9A602023D752009E4373 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72FB9A3E2023D752009E4373;
+					};
+				};
+			};
+			buildConfigurationList = 72FB9A3A2023D752009E4373 /* Build configuration list for PBXProject "DermaCare" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72FB9A362023D752009E4373;
+			productRefGroup = 72FB9A402023D752009E4373 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72FB9A3E2023D752009E4373 /* DermaCare */,
+				72FB9A552023D752009E4373 /* DermaCareTests */,
+				72FB9A602023D752009E4373 /* DermaCareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72FB9A3D2023D752009E4373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FB9A502023D752009E4373 /* LaunchScreen.storyboard in Resources */,
+				204C1B20209C4BBB009B52F5 /* bell.mp3 in Resources */,
+				72EBDBE4204FC8EF004ABAA4 /* GoogleService-Info.plist in Resources */,
+				72FB9A4D2023D752009E4373 /* Assets.xcassets in Resources */,
+				72FB9A482023D752009E4373 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FB9A542023D752009E4373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FB9A5F2023D752009E4373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52D3632B5763C021ACA5CB6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DermaCareTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962A28E846E15BBF1DFFD04E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DermaCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1CB464BD2EDCDFBAF421A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DermaCareUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC2345E3F91396D01B6391E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DermaCare/Pods-DermaCare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BDBOAuth1Manager/BDBOAuth1Manager.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDBOAuth1Manager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DermaCare/Pods-DermaCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72FB9A3B2023D752009E4373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C4D88D203BACE1004FEA2E /* HealthModel.swift in Sources */,
+				72DC3BE720A274D600836E8D /* FinalResultController.swift in Sources */,
+				722FB3B4208D18CC0088A7EE /* RootTabController.swift in Sources */,
+				72FB9A7D20243A54009E4373 /* AccountController.swift in Sources */,
+				FE02632020969E5A00758CF9 /* DoctorTableViewCell.swift in Sources */,
+				72FB9A772024389E009E4373 /* RegisterController.swift in Sources */,
+				204C1B2A209C4CDF009B52F5 /* Alarm.swift in Sources */,
+				726DB47D2098EAEE0033B6B8 /* HistoryModel.swift in Sources */,
+				204C1B2E209E812F009B52F5 /* CoreMlViewController.swift in Sources */,
+				72FB9A8320243B59009E4373 /* ListDoctorController.swift in Sources */,
+				7239C9A22037A29F00A3C545 /* HKManagerDelegate.swift in Sources */,
+				724A6F042086B58100DF3DAC /* ResultController.swift in Sources */,
+				FE0263222096FAE500758CF9 /* DoctorModel.swift in Sources */,
+				72FB9A8B202444FC009E4373 /* DiagnoseController.swift in Sources */,
+				20AAB1D320874575008FD056 /* HistoryTableViewCell.swift in Sources */,
+				72D6C64C20ACF5CA00FEF96B /* DetailResultAnalysisController.swift in Sources */,
+				726DB4712093A1280033B6B8 /* PharmacyViewCell.swift in Sources */,
+				726DB4732093A15F0033B6B8 /* PharmacyModel.swift in Sources */,
+				FEEBE16F209EBB3500BC3CFB /* DoctorAccountController.swift in Sources */,
+				204C1B1C209C4AF2009B52F5 /* PillReminderTableViewController.swift in Sources */,
+				FE02632A209C11FD00758CF9 /* DoctorAppointmentModel.swift in Sources */,
+				FE026324209A84C100758CF9 /* DoctorRegisterDetailsController.swift in Sources */,
+				724A6F062086CC8400DF3DAC /* HistoryController.swift in Sources */,
+				7239C9A020350FB900A3C545 /* HKManager.swift in Sources */,
+				FE026326209BE02F00758CF9 /* DoctorViewAppointmentController.swift in Sources */,
+				726DB47F209982990033B6B8 /* ViewAppointmentCell.swift in Sources */,
+				204C1B2C209E74E7009B52F5 /* inception_coreml.mlmodel in Sources */,
+				72FB9A4B2023D752009E4373 /* DermaCare.xcdatamodeld in Sources */,
+				72C4D88B203B92C0004FEA2E /* UserModel.swift in Sources */,
+				726DB4812099851B0033B6B8 /* PatientAppointmentModel.swift in Sources */,
+				72FB9A7B202439D9009E4373 /* HomeController.swift in Sources */,
+				722FB3B6208E9A2E0088A7EE /* ChatModel.swift in Sources */,
+				727EC1402092E308005008CE /* PharmacyController.swift in Sources */,
+				72FB9A8120243ABC009E4373 /* DoctorController.swift in Sources */,
+				72FB9A452023D752009E4373 /* ViewController.swift in Sources */,
+				204C1B28209C4C83009B52F5 /* AddAlarmViewController.swift in Sources */,
+				FE02632C209C152F00758CF9 /* DocAppointmentTableViewCell.swift in Sources */,
+				72FB9A8720243BF1009E4373 /* PatientViewAppointmentController.swift in Sources */,
+				72FB9A432023D752009E4373 /* AppDelegate.swift in Sources */,
+				726DB46D2093A0DF0033B6B8 /* YelpClient.swift in Sources */,
+				72FB9A79202438FE009E4373 /* LoginController.swift in Sources */,
+				72FB9A8920243C4E009E4373 /* BookAppointmentController.swift in Sources */,
+				72FB9A7F20243A93009E4373 /* ProfileController.swift in Sources */,
+				722FB3B8208EB4630088A7EE /* ChatMessageViewCell.swift in Sources */,
+				726DB4792093D4970033B6B8 /* AppointmentViewCell.swift in Sources */,
+				201FD235207174D200B2B1BE /* ScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FB9A522023D752009E4373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FB9A5B2023D752009E4373 /* DermaCareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FB9A5D2023D752009E4373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FB9A662023D752009E4373 /* DermaCareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72FB9A582023D752009E4373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72FB9A3E2023D752009E4373 /* DermaCare */;
+			targetProxy = 72FB9A572023D752009E4373 /* PBXContainerItemProxy */;
+		};
+		72FB9A632023D752009E4373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72FB9A3E2023D752009E4373 /* DermaCare */;
+			targetProxy = 72FB9A622023D752009E4373 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72FB9A462023D752009E4373 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FB9A472023D752009E4373 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72FB9A4E2023D752009E4373 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FB9A4F2023D752009E4373 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72FB9A682023D753009E4373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72FB9A692023D753009E4373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72FB9A6B2023D753009E4373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40545FFFE0FA422624E9C320 /* Pods-DermaCare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DermaCare/DermaCare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZYW5D8PTV;
+				INFOPLIST_FILE = DermaCare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.DermaCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72FB9A6C2023D753009E4373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72AFA4F3A92FF985FAC0A98 /* Pods-DermaCare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DermaCare/DermaCare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZYW5D8PTV;
+				INFOPLIST_FILE = DermaCare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.DermaCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72FB9A6E2023D753009E4373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D839FD3A7F3E20EC46E20DE /* Pods-DermaCareTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZYW5D8PTV;
+				INFOPLIST_FILE = DermaCareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.DermaCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DermaCare.app/DermaCare";
+			};
+			name = Debug;
+		};
+		72FB9A6F2023D753009E4373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FE3A8BB13B22E707363895 /* Pods-DermaCareTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZYW5D8PTV;
+				INFOPLIST_FILE = DermaCareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.DermaCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DermaCare.app/DermaCare";
+			};
+			name = Release;
+		};
+		72FB9A712023D753009E4373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B71EAF79CA1A0F8C7BBADDA /* Pods-DermaCareUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZYW5D8PTV;
+				INFOPLIST_FILE = DermaCareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.DermaCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DermaCare;
+			};
+			name = Debug;
+		};
+		72FB9A722023D753009E4373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4219805920FCD7E441C03A /* Pods-DermaCareUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZYW5D8PTV;
+				INFOPLIST_FILE = DermaCareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjsu.DermaCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DermaCare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72FB9A3A2023D752009E4373 /* Build configuration list for PBXProject "DermaCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FB9A682023D753009E4373 /* Debug */,
+				72FB9A692023D753009E4373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FB9A6A2023D753009E4373 /* Build configuration list for PBXNativeTarget "DermaCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FB9A6B2023D753009E4373 /* Debug */,
+				72FB9A6C2023D753009E4373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FB9A6D2023D753009E4373 /* Build configuration list for PBXNativeTarget "DermaCareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FB9A6E2023D753009E4373 /* Debug */,
+				72FB9A6F2023D753009E4373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FB9A702023D753009E4373 /* Build configuration list for PBXNativeTarget "DermaCareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FB9A712023D753009E4373 /* Debug */,
+				72FB9A722023D753009E4373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		72FB9A492023D752009E4373 /* DermaCare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				72FB9A4A2023D752009E4373 /* DermaCare.xcdatamodel */,
+			);
+			currentVersion = 72FB9A4A2023D752009E4373 /* DermaCare.xcdatamodel */;
+			path = DermaCare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 72FB9A372023D752009E4373 /* Project object */;
+}

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/ubuntu/295B/tensorflow/Chatbot/model.tflearn"
+all_model_checkpoint_paths: "/home/ubuntu/295B/tensorflow/Chatbot/model.tflearn"

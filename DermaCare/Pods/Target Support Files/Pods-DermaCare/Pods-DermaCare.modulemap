@@ -1,0 +1,6 @@
+framework module Pods_DermaCare {
+  umbrella header "Pods-DermaCare-umbrella.h"
+
+  export *
+  module * { export * }
+}

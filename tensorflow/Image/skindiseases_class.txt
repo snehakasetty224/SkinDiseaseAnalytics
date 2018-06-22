@@ -1,0 +1,10 @@
+Actinic Keratosis
+Basal Cell Carcinoma
+Dermatofibroma
+Lentigo_NOS
+Lentigo_Simplex
+Pigmented Benign Keratosis
+Seborrheic Keratosis
+Solar Lentigo
+Squamous_cell_carcinoma
+Vascular_lesion
